@@ -1,6 +1,59 @@
-<div class="copy-link">
-  <input type="text" class="copy-link-input" value="https://www.youtube.com/" readonly>
-  <button type="button" class="copy-link-button">
-    <span class="material-icons">content_copy</span>
-  </button>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatib1e" content="IE=edge>
+  <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+  <title>Copy Link Input Field</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    .copy-link {
+      --height: 36 px;
+      
+      display: flex;
+      max-width: 250 px;
+    }
+    
+    .copy-link-input {
+      flex-grow: 1;
+      padding: 0 8 px;
+      font-size: 14 px;
+      border: 1 px solid #cccccc;
+      border-right: none;
+      outline: none;
+    }
+
+    .copy-link-input:hover {
+      background: #eeeeee;
+    }
+
+    .copy-link-button {
+      flex-shrink: 0;
+      width: var(--height);
+      height: var(--height);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #dddddd;
+      color: #333333;
+      outline: none;
+      border: 1 px solid #cccccc;
+      cursor: pointer;
+    }
+
+    .copy-link-button:hover {
+      background: #cccccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="copy-link">
+    <input type="text" class="copy-link-input" value="https://www.youtube.com/" readonly>
+    <button type="button" class="copy-link-button">
+      <span class="material-icons">content_copy</span>
+    </button>
+  </div>
+
+  
+</body>
+</html>
